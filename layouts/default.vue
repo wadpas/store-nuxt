@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <div>Defauly Laout</div>
-    <slot />
+  <div class="bg-stone-50">
+    <div class="min-h-screen mx-auto max-w-[1600px] p-4 bg-white">
+      <slot />
+    </div>
   </div>
 </template>
 

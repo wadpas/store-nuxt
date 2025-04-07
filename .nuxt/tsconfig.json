@@ -5,6 +5,9 @@
       "nitropack/types": [
         "../node_modules/nitropack/types"
       ],
+      "nitropack/runtime": [
+        "../node_modules/nitropack/runtime"
+      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -41,6 +44,9 @@
       "nuxt": [
         "../node_modules/nuxt"
       ],
+      "vite/client": [
+        "../node_modules/vite/client"
+      ],
       "~": [
         ".."
       ],
@@ -48,10 +54,10 @@
         "../*"
       ],
       "@": [
-        "."
+        ".."
       ],
       "@/*": [
-        "./*"
+        "../*"
       ],
       "~~": [
         ".."
@@ -71,20 +77,11 @@
       "assets": [
         "../assets"
       ],
-      "assets/*": [
-        "../assets/*"
-      ],
       "public": [
         "../public"
       ],
       "public/*": [
         "../public/*"
-      ],
-      "#build": [
-        "."
-      ],
-      "#build/*": [
-        "./*"
       ],
       "#app": [
         "../node_modules/nuxt/dist/app"
@@ -95,26 +92,26 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
-      "#mdc-configs": [
-        "./mdc-configs"
-      ],
-      "#mdc-highlighter": [
-        "./mdc-highlighter"
-      ],
-      "#mdc-imports": [
-        "./mdc-imports"
-      ],
       "#vue-router": [
         "../node_modules/vue-router"
+      ],
+      "#unhead/composables": [
+        "../node_modules/nuxt/dist/head/runtime/composables/v3"
       ],
       "#imports": [
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/dev.json"
       ],
       "#components": [
         "./components"
+      ],
+      "#build": [
+        "."
+      ],
+      "#build/*": [
+        "./*"
       ]
     },
     "esModuleInterop": true,
@@ -129,7 +126,7 @@
     "noUncheckedIndexedAccess": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
-    "module": "preserve",
+    "module": "ESNext",
     "noEmit": true,
     "lib": [
       "ESNext",
@@ -149,10 +146,8 @@
     "./nuxt.d.ts",
     "../.config/nuxt.*",
     "../**/*",
-    "../node_modules/@nuxtjs/mdc/runtime",
-    "../node_modules/@nuxtjs/mdc/dist/runtime",
-    "../node_modules/@nuxt/content/runtime",
-    "../node_modules/@nuxt/content/dist/runtime",
+    "../node_modules/@nuxtjs/tailwindcss/runtime",
+    "../node_modules/@nuxtjs/tailwindcss/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
@@ -163,10 +158,11 @@
     "../dist",
     "../node_modules",
     "../node_modules/nuxt/node_modules",
-    "../node_modules/@nuxtjs/mdc/runtime/server",
-    "../node_modules/@nuxtjs/mdc/dist/runtime/server",
-    "../node_modules/@nuxt/content/runtime/server",
-    "../node_modules/@nuxt/content/dist/runtime/server",
+    "../node_modules/@nuxtjs/tailwindcss/node_modules",
+    "../node_modules/@nuxt/devtools/node_modules",
+    "../node_modules/@nuxt/telemetry/node_modules",
+    "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/@nuxtjs/tailwindcss/dist/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
