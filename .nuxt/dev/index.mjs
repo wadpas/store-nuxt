@@ -580,6 +580,10 @@ const inlineAppConfig = {
   "ui": {
     "colors": {
       "primary": "green",
+      "secondary": "blue",
+      "success": "green",
+      "info": "blue",
+      "warning": "yellow",
       "error": "red",
       "neutral": "slate"
     },
@@ -855,14 +859,6 @@ const _inlineRuntimeConfig = {
     "routeRules": {
       "/__nuxt_error": {
         "cache": false
-      },
-      "/_fonts/**": {
-        "headers": {
-          "cache-control": "public, max-age=31536000, immutable"
-        },
-        "cache": {
-          "maxAge": 31536000
-        }
       },
       "/_nuxt/builds/meta/**": {
         "headers": {
@@ -1505,7 +1501,6 @@ const _lazy_rDWQFK = () => Promise.resolve().then(function () { return renderer$
 const handlers = [
   { route: '/__nuxt_error', handler: _lazy_rDWQFK, lazy: true, middleware: false, method: undefined },
   { route: '/api/_nuxt_icon/:collection', handler: _8afFLP, lazy: false, middleware: false, method: undefined },
-  { route: '/_fonts/**', handler: _lazy_rDWQFK, lazy: true, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_rDWQFK, lazy: true, middleware: false, method: undefined }
 ];
 
