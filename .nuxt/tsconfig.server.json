@@ -106,6 +106,9 @@
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
+      "#auth-utils": [
+        "../node_modules/nuxt-auth-utils/dist/runtime/types/index"
+      ],
       "#unhead/composables": [
         "../node_modules/nuxt/dist/head/runtime/composables/v3"
       ],
@@ -124,6 +127,7 @@
     "../node_modules/@nuxtjs/color-mode/runtime/server",
     "../node_modules/@nuxt/ui/runtime/server",
     "../node_modules/@nuxt/icon/runtime/server",
+    "../node_modules/nuxt-auth-utils/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",
@@ -136,6 +140,7 @@
     "../node_modules/@nuxtjs/color-mode/node_modules",
     "../node_modules/@nuxt/ui/node_modules",
     "../node_modules/@nuxt/icon/node_modules",
+    "../node_modules/nuxt-auth-utils/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
     "../dist"
