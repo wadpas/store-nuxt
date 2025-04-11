@@ -14,6 +14,10 @@
     password: undefined,
   })
 
+  const authenticate = async () => {
+    window.location.href = '/api/auth/github'
+  }
+
   const toast = useToast()
   async function onSubmit(event: FormSubmitEvent<Schema>) {
     toast.add({ title: 'Success', description: 'The form has been submitted.', color: 'success' })
@@ -63,6 +67,7 @@
           type="button"
           class="justify-center w-full shadow-xs"
           color="neutral"
+          @click="authenticate"
           variant="outline">
           <Icon
             name="uil:github"

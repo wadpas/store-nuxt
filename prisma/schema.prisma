@@ -35,11 +35,11 @@ model User {
 
 model OAuthAccount {
   id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId         String   @db.ObjectId
   providerId     String
   providerUserId String
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
-  userId         String   @db.ObjectId
   user           User     @relation(fields: [userId], references: [id])
 
   @@unique([providerId, providerUserId])

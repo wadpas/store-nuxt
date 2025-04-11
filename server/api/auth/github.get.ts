@@ -1,5 +1,5 @@
-import { db } from '~/utils/db'
-import { sanitizeUser } from '~/utils/sanitize'
+import { db } from '~/server/utils/db'
+import { sanitizeUser } from '~/server/utils/sanitize'
 
 export default defineOAuthGitHubEventHandler({
   config: {

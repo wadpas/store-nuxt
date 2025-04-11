@@ -20,6 +20,7 @@ declare global {
   const createEvent: typeof import('../../node_modules/h3')['createEvent']
   const createEventStream: typeof import('../../node_modules/h3')['createEventStream']
   const createRouter: typeof import('../../node_modules/h3')['createRouter']
+  const db: typeof import('../../server/utils/db')['db']
   const defaultContentType: typeof import('../../node_modules/h3')['defaultContentType']
   const defineAppConfig: typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/utils/config')['defineAppConfig']
   const defineCachedEventHandler: typeof import('../../node_modules/nitropack/dist/runtime/internal/cache')['defineCachedEventHandler']
@@ -138,6 +139,7 @@ declare global {
   const runTask: typeof import('../../node_modules/nitropack/dist/runtime/internal/task')['runTask']
   const sanitizeStatusCode: typeof import('../../node_modules/h3')['sanitizeStatusCode']
   const sanitizeStatusMessage: typeof import('../../node_modules/h3')['sanitizeStatusMessage']
+  const sanitizeUser: typeof import('../../server/utils/sanitize')['sanitizeUser']
   const sealSession: typeof import('../../node_modules/h3')['sealSession']
   const send: typeof import('../../node_modules/h3')['send']
   const sendError: typeof import('../../node_modules/h3')['sendError']
@@ -157,6 +159,7 @@ declare global {
   const setResponseStatus: typeof import('../../node_modules/h3')['setResponseStatus']
   const setUserSession: typeof import('../../node_modules/nuxt-auth-utils/dist/runtime/server/utils/session')['setUserSession']
   const splitCookiesString: typeof import('../../node_modules/h3')['splitCookiesString']
+  const stripe: typeof import('../../server/utils/stripe')['stripe']
   const toEventHandler: typeof import('../../node_modules/h3')['toEventHandler']
   const toNodeListener: typeof import('../../node_modules/h3')['toNodeListener']
   const toPlainHandler: typeof import('../../node_modules/h3')['toPlainHandler']
@@ -357,3 +360,6 @@ export { defineOAuthZitadelEventHandler } from 'C:/Users/Wad/Desktop/apps/store-
 export { getAtprotoClientMetadata } from 'C:/Users/Wad/Desktop/apps/store-nuxt/node_modules/nuxt-auth-utils/dist/runtime/server/utils/atproto';
 export { hashPassword, verifyPassword } from 'C:/Users/Wad/Desktop/apps/store-nuxt/node_modules/nuxt-auth-utils/dist/runtime/server/utils/password';
 export { sessionHooks, getUserSession, setUserSession, replaceUserSession, clearUserSession, requireUserSession } from 'C:/Users/Wad/Desktop/apps/store-nuxt/node_modules/nuxt-auth-utils/dist/runtime/server/utils/session';
+export { db } from 'C:/Users/Wad/Desktop/apps/store-nuxt/server/utils/db';
+export { sanitizeUser } from 'C:/Users/Wad/Desktop/apps/store-nuxt/server/utils/sanitize';
+export { stripe } from 'C:/Users/Wad/Desktop/apps/store-nuxt/server/utils/stripe';

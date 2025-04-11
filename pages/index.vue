@@ -1,9 +1,12 @@
 <template>
   <div class="h-screen">
-    <div>Books</div>
+    <div>Store</div>
     <NuxtLink to="/auth/login">login</NuxtLink>
     <NuxtLink to="/auth/register">register</NuxtLink>
+    {{ user }}
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const user = useUserSession()
+</script>
